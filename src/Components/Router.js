@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import Navigator from "./Navigator";
 import Award from "../Router/Awards/Awards";
+import Contact from "../Router/Contact/Contact";
+import Skill from "../Router/Skills/Skill";
 
 const AppRouter = () => {
   return (
@@ -17,9 +19,13 @@ const AppRouter = () => {
         <Route exact path="/awards">
           <Award />
         </Route>
-        <Route exact path="/contacts"></Route>
+        <Route exact path="/contacts">
+          <Contact />
+        </Route>
         <Route exact path="/portfolio"></Route>
-        <Route exact path="/skill"></Route>
+        <Route exact path="/skill">
+          <Skill />
+        </Route>
         <Redirect from="*" to="/" />
       </Switch>
     </Router>
