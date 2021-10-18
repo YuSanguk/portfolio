@@ -1,0 +1,14 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+html,
+body {
+  background: #353b48;
+  height: 100vh;
+  color: white;
+  font-family: "pretendard";
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

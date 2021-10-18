@@ -9,6 +9,7 @@ import Navigator from "./Navigator";
 import Award from "../Router/Awards/Awards";
 import Contact from "../Router/Contact/Contact";
 import Skill from "../Router/Skills/Skill";
+import Footer from "./Footer";
 
 const AppRouter = () => {
   return (
@@ -28,6 +29,7 @@ const AppRouter = () => {
         </Route>
         <Redirect from="*" to="/" />
       </Switch>
+      <Footer />
     </Router>
   );
 };
