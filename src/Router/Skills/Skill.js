@@ -10,11 +10,19 @@ const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   background: #2f3640;
+  border-radius: 12px;
 
   justify-content: center;
   align-items: center;
   padding: 1em 0.2em 1em 0.2em;
   margin: 0;
+
+  @media only screen and (min-width: 800px) {
+    width: 60%;
+  }
+  @media only screen and (max-width: 799px) {
+    width: 95%;
+  }
 `;
 
 const ItemDiv = styled.div`
@@ -34,7 +42,6 @@ const ItemImg = styled.img`
 
 const ItemTitle = styled.h3`
   margin: 0;
-
   margin-bottom: 0.4em;
 `;
 
@@ -43,21 +50,27 @@ const ItemText = styled.p`
 `;
 
 const Title = styled.h2`
+  margin: 0;
+  margin-top: 1em;
+  margin-bottom: 0.1em;
   font-size: 2rem;
 `;
 
 const SubTitle = styled.h6`
   font-size: 1.5rem;
   margin: 0;
-  margin-top: 0.5em;
+  margin-top: 0.95em;
   margin-bottom: 0.5em;
 `;
 
-const TitleEx = styled.p``;
+const TitleEx = styled.p`
+  margin: 0;
+  margin-bottom: 0.8em;
+`;
 
-const Skill = () => {
+const Skill = ({ Container }) => {
   return (
-    <>
+    <Container>
       <Title>Skills</Title>
       <TitleEx>Lorem</TitleEx>
       <SubTitle>Web</SubTitle>
@@ -92,7 +105,7 @@ const Skill = () => {
         ItemTitle={ItemTitle}
         ItemText={ItemText}
       />
-    </>
+    </Container>
   );
 };
 

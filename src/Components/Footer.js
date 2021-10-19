@@ -22,9 +22,20 @@ const StyledP = styled.p`
   padding: 0;
 `;
 
+const Line = styled.hr`
+  width: 80%;
+  border: none;
+  height: 0.5px;
+  background: white;
+  margin: 0;
+  margin-top: 0.7em;
+  margin-bottom: 2em;
+`;
+
 const Footer = () => {
   return (
     <StyledFooter>
+      <Line />
       <StyledP>Created: Dev-Who</StyledP>
       <StyledP>Designed: Dev-Who</StyledP>
     </StyledFooter>

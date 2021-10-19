@@ -16,7 +16,7 @@ const Nav = styled.ul`
   font-weight: 400;
   scroll-snap-stop: always;
   @media only screen and (min-width: 800px) {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     column-gap: 2rem;
   }
   @media only screen and (max-width: 799px) {
@@ -27,6 +27,12 @@ const Nav = styled.ul`
 
 const Li = styled.li`
   color: white;
+  transition: 0.4s;
+
+  &:hover {
+    background: #5fe386;
+    transition: 0.4s;
+  }
 `;
 
 const Navigator = () => {
