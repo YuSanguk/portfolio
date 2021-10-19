@@ -1,0 +1,33 @@
+.transition-group {
+  position: relative;
+}
+
+.fade-enter {
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(100%) rotateZ(0deg);
+}
+
+.fade-enter-active {
+  position: absolute;
+  overflow: hidden;
+  opacity: 1;
+  transform: translateX(-50%) rotateZ(0);
+  transition: all 1s ease-in;
+}
+
+.fade-exit {
+  position: absolute;
+  overflow: hidden;
+  opacity: 1;
+  transform: translateX(-50%) rotateZ(0);
+}
+
+.fade-exit-active {
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(-100%) rotateZ(0deg);
+  transition: all 1s ease-in;
+}
