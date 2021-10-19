@@ -8,6 +8,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "pretendard";
+  scroll-snap-type: proximity;
+  scroll-snap-points-y: repeat(99%);
+  scroll-snap-type: y proximity;
 }
 
 a {

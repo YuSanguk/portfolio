@@ -4,11 +4,7 @@ import Landing from "../Router/Landing/Landing";
 import Award from "../Router/Awards/Awards";
 import Contact from "../Router/Contact/Contact";
 import Skill from "../Router/Skills/Skill";
-import {
-  TransitionGroup,
-  CSSTransition,
-  Transition,
-} from "react-transition-group";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "../style/transition.css";
 
 const AppRouter = () => {

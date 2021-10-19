@@ -14,6 +14,7 @@ const Nav = styled.ul`
   padding-top: 12px;
   padding-bottom: 10px;
   font-weight: 400;
+  scroll-snap-stop: always;
   @media only screen and (min-width: 800px) {
     font-size: 2.2rem;
     column-gap: 2rem;

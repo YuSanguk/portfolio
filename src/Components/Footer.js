@@ -7,25 +7,26 @@ const StyledFooter = styled.footer`
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-  background: #999;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
-  margin-top: 5em;
-  padding-top: 2.4em;
-  padding-bottom: 2.4em;
+  margin-top: 1em;
+  padding-top: 1.1em;
+  padding-bottom: 1.1em;
 `;
 
 const StyledP = styled.p`
   margin: 0;
-  margin-left: 2em;
+  margin-bottom: 0.3rem;
   padding: 0;
 `;
 
 const Footer = () => {
   return (
     <StyledFooter>
-      <StyledP>a</StyledP>
-      <StyledP>a</StyledP>
+      <StyledP>Created: Dev-Who</StyledP>
+      <StyledP>Designed: Dev-Who</StyledP>
     </StyledFooter>
   );
 };
