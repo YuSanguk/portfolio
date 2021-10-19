@@ -15,9 +15,6 @@ const StyledDiv = styled.div`
   align-items: center;
   padding: 1em 0.2em 1em 0.2em;
   margin: 0;
-
-  scroll-snap-align: start;
-  scroll-margin-top: calc(1em + 2.2rem);
 `;
 
 const ItemDiv = styled.div`
