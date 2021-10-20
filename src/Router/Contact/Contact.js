@@ -6,7 +6,7 @@ const Contact = ({ Container, Title, TitleEx, SubTitle }) => {
   return (
     <Container>
       <Icon />
-      <Title>Contact With me</Title>
+      <Title>Send Email!</Title>
       <Email />
     </Container>
   );

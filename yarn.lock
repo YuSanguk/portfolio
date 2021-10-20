@@ -4278,6 +4278,11 @@
     "pify" "^4.0.1"
     "rimraf" "^2.6.3"
 
+"delay-react-route-exit@^1.0.0":
+  "integrity" "sha512-+Svk0LE6wpDlu+cXkzeYftH+eOjJG8OGMwowITIRVWDDyLPOD+DB5qC7AuLKgef25IhnTAXXvcKoRFD8ZqxXFA=="
+  "resolved" "https://registry.npmjs.org/delay-react-route-exit/-/delay-react-route-exit-1.0.0.tgz"
+  "version" "1.0.0"
+
 "delayed-stream@~1.0.0":
   "integrity" "sha1-3zrhmayt+31ECqrgsp4icrJOxhk="
   "resolved" "https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz"
@@ -9462,6 +9467,11 @@
     "regenerator-runtime" "^0.13.7"
     "whatwg-fetch" "^3.4.1"
 
+"react-delay-link@^1.1.6":
+  "integrity" "sha512-tMqJtSeSW6FgImsa1fteJCer2MHDEQP+r5egDH0kNMYScy5EYpYtnW8gZ867hniVeYdEfWKCt7hnYsJG4NUL/Q=="
+  "resolved" "https://registry.npmjs.org/react-delay-link/-/react-delay-link-1.1.6.tgz"
+  "version" "1.1.6"
+
 "react-dev-utils@^11.0.3":
   "integrity" "sha512-dx0LvIGHcOPtKbeiSUM4jqpBl3TcY7CDjZdfOIcKeznE7BWr9dg0iPG90G5yfVQ+p/rGNMXdbfStvzQZEVEi4A=="
   "resolved" "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-11.0.4.tgz"
@@ -9585,7 +9595,7 @@
   "resolved" "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"
   "version" "0.8.3"
 
-"react-router-dom@^5.3.0":
+"react-router-dom@^5.2.0", "react-router-dom@^5.3.0":
   "integrity" "sha512-ObVBLjUZsphUUMVycibxgMdh5jJ1e3o+KpAZBVeHcNQZ4W+uUGGWsokurzlF4YOldQYRQL4y6yFRWM4m3svmuQ=="
   "resolved" "https://registry.npmjs.org/react-router-dom/-/react-router-dom-5.3.0.tgz"
   "version" "5.3.0"

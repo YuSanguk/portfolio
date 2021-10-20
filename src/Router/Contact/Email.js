@@ -2,10 +2,11 @@ import React from "react";
 import emailjs from "emailjs-com";
 import { Form, Input, TextArea, Button } from "semantic-ui-react";
 import Swal from "sweetalert2";
+import { EmailJs } from "../../emailJs";
 
-const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
-const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
-const USER_ID = process.env.REACT_APP_USER_ID;
+const SERVICE_ID = EmailJs.service_id;
+const TEMPLATE_ID = EmailJs.template_id;
+const USER_ID = EmailJs.user_id;
 
 const Email = () => {
   const handleOnSubmit = e => {
@@ -26,8 +27,7 @@ const Email = () => {
   };
 
   return (
-    <div>
-      <p>Contact</p>
+    <>
       <Form onSubmit={handleOnSubmit}>
         <Form.Field
           id="form-input-control-email"
@@ -61,7 +61,7 @@ const Email = () => {
           Submit
         </Button>
       </Form>
-    </div>
+    </>
   );
 };
 

@@ -10,7 +10,6 @@ body {
   font-family: "pretendard";
 }
 
-a {
-  color: white;
-  text-decoration: none;
+body {
+  overflow-y: scroll;
 }

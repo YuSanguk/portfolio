@@ -1,7 +1,9 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useHistory, useLocation } from "react-router-dom";
+import DelayLink from "react-delay-link";
 import styled from "styled-components";
 import "../style/nav-style.css";
+import Transform from "./Transform";
 
 const Nav = styled.ul`
   margin: 0;
@@ -9,7 +11,7 @@ const Nav = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: columns;
-  align-item: center;
+  align-items: center;
   justify-content: center;
   padding-top: 12px;
   padding-bottom: 10px;
@@ -27,64 +29,92 @@ const Nav = styled.ul`
 
 const Li = styled.li`
   color: white;
-  transition: 0.4s;
-
+  text-decoration: none;
+  transition: 0.2s ease-in;
+  cursor: pointer;
   &:hover {
-    background: #5fe386;
-    transition: 0.4s;
+    color: #08fdd8;
+    transition: 0.2s ease-in;
   }
 `;
 
 const Navigator = () => {
   const [select, SetSelect] = useState(0);
+  const [on, setOn] = useState(false);
+
+  const action = () => {
+    setOn(true);
+    setTimeout(() => {
+      setOn(false);
+    }, 5000);
+  };
+
   return (
-    <Nav>
-      <Li>
-        <Link
-          to="/"
+    <>
+      {on && <Transform />}
+      <Nav>
+        <Li
           onClick={() => SetSelect(0)}
           className={select === 0 ? "selected" : null}
         >
-          HOME
-        </Link>
-      </Li>
-      <Li>
-        <Link
-          to="/skill"
+          <DelayLink delay={4000} to="/" clickAction={action} replace={false}>
+            HOME
+          </DelayLink>
+        </Li>
+        <Li
           onClick={() => SetSelect(4)}
           className={select === 4 ? "selected" : null}
         >
-          SKILL
-        </Link>
-      </Li>
-      <Li>
-        <Link
-          to="/portfolio"
+          <DelayLink
+            delay={4000}
+            to="/skill"
+            clickAction={action}
+            replace={false}
+          >
+            SKILL
+          </DelayLink>
+        </Li>
+        <Li
           onClick={() => SetSelect(3)}
           className={select === 3 ? "selected" : null}
         >
-          PORTFOLIO
-        </Link>
-      </Li>
-      <Li>
-        <Link
-          to="/awards"
+          <DelayLink
+            delay={4000}
+            to="/portfolio"
+            clickAction={action}
+            replace={false}
+          >
+            PORTFOLIO
+          </DelayLink>
+        </Li>
+        <Li
           onClick={() => SetSelect(1)}
           className={select === 1 ? "selected" : null}
         >
-          AWARD
-        </Link>
-      </Li>
-      <Li>
-        <Link
-          to="/contacts"
+          <DelayLink
+            delay={4000}
+            to="/awards"
+            clickAction={action}
+            replace={false}
+          >
+            AWARD
+          </DelayLink>
+        </Li>
+        <Li
           onClick={() => SetSelect(2)}
           className={select === 2 ? "selected" : null}
         >
-          CONTACT
-        </Link>
-      </Li>
-    </Nav>
+          <DelayLink
+            delay={4000}
+            to="/contacts"
+            clickAction={action}
+            replace={false}
+          >
+            CONTACT
+          </DelayLink>
+        </Li>
+      </Nav>
+    </>
   );
 };
 
