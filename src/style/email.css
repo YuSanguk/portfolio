@@ -1,0 +1,102 @@
+@media screen and (max-width: 600px) {
+  .mail-container {
+    width: 80%;
+    margin-top: 2em;
+    border-radius: 16px;
+    padding: 1em 0 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353b41;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .mail-container {
+    width: 50%;
+    margin-top: 2em;
+    border-radius: 16px;
+    padding: 1em 0 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353b41;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .mail-container {
+    width: 40%;
+    margin-top: 2em;
+    border-radius: 16px;
+    padding: 1em 0 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353b41;
+  }
+}
+
+.mail-container label {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.mail-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 16px;
+}
+.mail-container > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mail-container input {
+  border: none;
+  width: 100% !important;
+  height: 28px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.mail-container textarea {
+  border: none;
+  border-radius: 4px;
+  width: calc(100% + 2px) !important;
+  height: 14em;
+}
+
+.mail-container textarea {
+  resize: none;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mail-send {
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: center;
+  width: 128px;
+  height: 36px;
+  background: slateblue;
+  font-weight: 600;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
