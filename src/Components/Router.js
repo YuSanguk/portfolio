@@ -1,5 +1,10 @@
 import React from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import styled from "styled-components";
 
 import Navigator from "./Navigator";
@@ -40,7 +45,7 @@ const TitleEx = styled.p`
 
 const AppRouter = () => {
   return (
-    <>
+    <Router>
       <Navigator />
       <Switch>
         <Route exact path="/">
@@ -57,7 +62,7 @@ const AppRouter = () => {
             SubTitle={SubTitle}
           />
         </Route>
-        <Route exact path="/portfolio">
+        <Route exact path="/portf">
           <Portfolio />
         </Route>
         <Route exact path="/skill">
@@ -71,7 +76,7 @@ const AppRouter = () => {
         <Redirect from="*" to="/" />
       </Switch>
       <Footer />
-    </>
+    </Router>
   );
 };
 

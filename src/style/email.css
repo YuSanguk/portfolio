@@ -68,6 +68,7 @@
   height: 28px;
   border-radius: 4px;
   text-align: center;
+  padding: 4px;
 }
 
 .mail-container textarea {
@@ -75,6 +76,8 @@
   border-radius: 4px;
   width: calc(100% + 2px) !important;
   height: 14em;
+  font-family: "pretendard";
+  padding: 4px;
 }
 
 .mail-container textarea {

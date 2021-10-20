@@ -1,14 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { Link, useHistory, useLocation } from "react-router-dom";
+import React, { useState } from "react";
 import DelayLink from "react-delay-link";
 import styled from "styled-components";
 import "../style/nav-style.css";
 import Transform from "./Transform";
-import {
-  disableBodyScroll,
-  enableBodyScroll,
-  clearAllBodyScrollLocks,
-} from "body-scroll-lock";
+import { disableBodyScroll, clearAllBodyScrollLocks } from "body-scroll-lock";
 
 const Nav = styled.ul`
   margin: 0;
@@ -87,7 +82,7 @@ const Navigator = () => {
         >
           <DelayLink
             delay={3900}
-            to="/portfolio"
+            to="/portf
             clickAction={action}
             replace={false}
           >
