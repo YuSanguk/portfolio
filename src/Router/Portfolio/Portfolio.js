@@ -1,10 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
+import styled from "styled-components";
+import WebPort from "./webport/Webport";
+import GamePort from "./gameport/Gameport";
+import EditPort from "./editport/EditPort";
+import GraphicPort from "./graphic/GraphicPort";
 
-const Portfolio = () => {
+import "../../style/port.css";
+
+const StyledSelect = styled.select`
+  border: none;
+  height: 2.4rem;
+  width: 152px;
+  padding-left: 3px !important;
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: white;
+  font-family: "pretendard";
+  font-size: 2rem;
+  font-weight: 700;
+`;
+
+const Portfolio = ({ Container, Title }) => {
+  const [mode, setMode] = useState("Web");
   return (
-    <div>
-      <div>a</div>
-    </div>
+    <Container>
+      <Title>
+        Portfolio About{" "}
+        <StyledSelect value={mode} onChange={e => setMode(e.target.value)}>
+          <option>Web</option>
+          <option>Game</option>
+          <option>Edit</option>
+          <option>Graphic</option>
+        </StyledSelect>
+      </Title>
+      {mode === "Web" && <WebPort />}
+      {mode === "Game" && <GamePort />}
+      {mode === "Edit" && <EditPort />}
+      {mode === "Graphic" && <GraphicPort />}
+    </Container>
   );
 };
 

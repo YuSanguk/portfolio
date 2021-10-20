@@ -35,7 +35,7 @@ const Center = styled.div`
   z-index: 9;
   opacity: 0;
   background: #353b41;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   display: flex;

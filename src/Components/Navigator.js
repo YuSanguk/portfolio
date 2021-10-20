@@ -3,7 +3,7 @@ import DelayLink from "react-delay-link";
 import styled from "styled-components";
 import "../style/nav-style.css";
 import Transform from "./Transform";
-import { disableBodyScroll, clearAllBodyScrollLocks } from "body-scroll-lock";
+var Scroll = require("react-scroll");
 
 const Nav = styled.ul`
   margin: 0;
@@ -44,22 +44,23 @@ const Navigator = () => {
 
   const action = () => {
     setOn(true);
-    disableBodyScroll(document.querySelector(".tran"));
+    setTimeout(() => {
+      Scroll.animateScroll.scrollToTop();
+    }, 4000);
     setTimeout(() => {
       setOn(false);
-      clearAllBodyScrollLocks();
     }, 5000);
   };
 
   return (
     <>
-      {on && <Transform className="tran" />}
+      {on && <Transform />}
       <Nav>
         <Li
           onClick={() => SetSelect(0)}
           className={select === 0 ? "selected" : null}
         >
-          <DelayLink delay={3900} to="/" clickAction={action} replace={false}>
+          <DelayLink delay={2000} to="/" clickAction={action} replace={false}>
             HOME
           </DelayLink>
         </Li>
@@ -68,7 +69,7 @@ const Navigator = () => {
           className={select === 4 ? "selected" : null}
         >
           <DelayLink
-            delay={3900}
+            delay={2000}
             to="/skill"
             clickAction={action}
             replace={false}
@@ -81,7 +82,7 @@ const Navigator = () => {
           className={select === 3 ? "selected" : null}
         >
           <DelayLink
-            delay={3900}
+            delay={2000}
             to="/portf"
             clickAction={action}
             replace={false}
@@ -94,7 +95,7 @@ const Navigator = () => {
           className={select === 1 ? "selected" : null}
         >
           <DelayLink
-            delay={3900}
+            delay={2000}
             to="/awards"
             clickAction={action}
             replace={false}

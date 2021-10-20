@@ -8,7 +8,6 @@ import {
 import styled from "styled-components";
 
 import Navigator from "./Navigator";
-import Footer from "./Footer";
 
 import Landing from "../Router/Landing/Landing";
 import Award from "../Router/Awards/Awards";
@@ -63,7 +62,7 @@ const AppRouter = () => {
           />
         </Route>
         <Route exact path="/portf">
-          <Portfolio />
+          <Portfolio Container={Container} Title={Title} />
         </Route>
         <Route exact path="/skill">
           <Skill
@@ -75,7 +74,6 @@ const AppRouter = () => {
         </Route>
         <Redirect from="*" to="/" />
       </Switch>
-      <Footer />
     </Router>
   );
 };
