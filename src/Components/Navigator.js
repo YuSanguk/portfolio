@@ -4,6 +4,11 @@ import DelayLink from "react-delay-link";
 import styled from "styled-components";
 import "../style/nav-style.css";
 import Transform from "./Transform";
+import {
+  disableBodyScroll,
+  enableBodyScroll,
+  clearAllBodyScrollLocks,
+} from "body-scroll-lock";
 
 const Nav = styled.ul`
   margin: 0;
@@ -44,20 +49,22 @@ const Navigator = () => {
 
   const action = () => {
     setOn(true);
+    disableBodyScroll(document.querySelector(".tran"));
     setTimeout(() => {
       setOn(false);
+      clearAllBodyScrollLocks();
     }, 5000);
   };
 
   return (
     <>
-      {on && <Transform />}
+      {on && <Transform className="tran" />}
       <Nav>
         <Li
           onClick={() => SetSelect(0)}
           className={select === 0 ? "selected" : null}
         >
-          <DelayLink delay={4000} to="/" clickAction={action} replace={false}>
+          <DelayLink delay={3900} to="/" clickAction={action} replace={false}>
             HOME
           </DelayLink>
         </Li>
@@ -66,7 +73,7 @@ const Navigator = () => {
           className={select === 4 ? "selected" : null}
         >
           <DelayLink
-            delay={4000}
+            delay={3900}
             to="/skill"
             clickAction={action}
             replace={false}
@@ -79,7 +86,7 @@ const Navigator = () => {
           className={select === 3 ? "selected" : null}
         >
           <DelayLink
-            delay={4000}
+            delay={3900}
             to="/portfolio"
             clickAction={action}
             replace={false}
@@ -92,7 +99,7 @@ const Navigator = () => {
           className={select === 1 ? "selected" : null}
         >
           <DelayLink
-            delay={4000}
+            delay={3900}
             to="/awards"
             clickAction={action}
             replace={false}
@@ -105,7 +112,7 @@ const Navigator = () => {
           className={select === 2 ? "selected" : null}
         >
           <DelayLink
-            delay={4000}
+            delay={3900}
             to="/contacts"
             clickAction={action}
             replace={false}

@@ -1,4 +1,3 @@
-import { style } from "dom-helpers";
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
