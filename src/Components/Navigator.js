@@ -82,7 +82,7 @@ const Navigator = () => {
         >
           <DelayLink
             delay={3900}
-            to="/portf
+            to="/portf"
             clickAction={action}
             replace={false}
           >
