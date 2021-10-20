@@ -49,26 +49,7 @@ const ItemText = styled.p`
   margin: 0;
 `;
 
-const Title = styled.h2`
-  margin: 0;
-  margin-top: 1em;
-  margin-bottom: 0.1em;
-  font-size: 2rem;
-`;
-
-const SubTitle = styled.h6`
-  font-size: 1.5rem;
-  margin: 0;
-  margin-top: 0.95em;
-  margin-bottom: 0.5em;
-`;
-
-const TitleEx = styled.p`
-  margin: 0;
-  margin-bottom: 0.8em;
-`;
-
-const Skill = ({ Container }) => {
+const Skill = ({ Container, TitleEx, SubTitle, Title }) => {
   return (
     <Container>
       <Title>Skills</Title>

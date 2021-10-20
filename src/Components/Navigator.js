@@ -21,7 +21,7 @@ const Nav = styled.ul`
   }
   @media only screen and (max-width: 799px) {
     font-size: 4vw;
-    column-gap: 3.5vw;
+    column-gap: 2.8vw;
   }
 `;
 
