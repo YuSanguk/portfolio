@@ -12,27 +12,43 @@ const Graphic = ({ StyledDiv, ItemDiv, ItemImg, ItemTitle, ItemText }) => {
       <ItemDiv>
         <ItemImg src={be} alt="be" />
         <ItemTitle>Blender</ItemTitle>
-        <ItemText>Blender is</ItemText>
+        <ItemText>
+          Blender is a 3D computer graphics software toolset used for creating
+          animated films, visual effects, art, 3D printed models, motion
+          graphics, interactive 3D applications, virtual reality, and computer
+          games.
+        </ItemText>
       </ItemDiv>
       <ItemDiv>
         <ItemImg src={fi} alt="fi" />
         <ItemTitle>Figma</ItemTitle>
-        <ItemText>Figma is</ItemText>
+        <ItemText>
+          Figma focuses on use in user interface and user experience design,
+          with an emphasis on real-time collaboration.
+        </ItemText>
       </ItemDiv>
       <ItemDiv>
         <ItemImg src={xd} alt="xd" />
         <ItemTitle>Adobe Xd</ItemTitle>
-        <ItemText>Xd is</ItemText>
+        <ItemText>
+          XD is a vector-based user experience design tool for web apps and
+          mobile apps.
+        </ItemText>
       </ItemDiv>
       <ItemDiv>
         <ItemImg src={ph} alt="ph" />
         <ItemTitle>Adobe Phtoshop</ItemTitle>
-        <ItemText>PhotoShop is</ItemText>
+        <ItemText>Adobe Photoshop is a raster graphics editor.</ItemText>
       </ItemDiv>
       <ItemDiv>
         <ItemImg src={ind} alt="ind" />
-        <ItemTitle>Adobe Indesign</ItemTitle>
-        <ItemText>Indesign is</ItemText>
+        <ItemTitle>Adobe InDesign</ItemTitle>
+        <ItemText>
+          InDesign is a desktop publishing and page layout designing software
+          application. InDesign can be used to create works such as posters,
+          flyers, brochures, magazines, newspapers, presentations, books and
+          ebooks.
+        </ItemText>
       </ItemDiv>
     </StyledDiv>
   );

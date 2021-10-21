@@ -9,12 +9,18 @@ const Edit = ({ StyledDiv, ItemDiv, ItemImg, ItemTitle, ItemText }) => {
       <ItemDiv>
         <ItemImg src={ae} alt="ae" />
         <ItemTitle>Adobe After Effect</ItemTitle>
-        <ItemText>after effect is</ItemText>
+        <ItemText>
+          Adobe After Effects is a digital visual effects, motion graphics, and
+          compositing application and used in the post-production process of
+          film making, video games and television production.
+        </ItemText>
       </ItemDiv>
       <ItemDiv>
         <ItemImg src={pp} alt="pp" />
         <ItemTitle>Adobe Premiere Pro</ItemTitle>
-        <ItemText>Premiere Pro is</ItemText>
+        <ItemText>
+          Premiere Pro is a timeline-based video editing software application.
+        </ItemText>
       </ItemDiv>
     </StyledDiv>
   );

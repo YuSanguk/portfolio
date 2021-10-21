@@ -12,34 +12,42 @@ const Web = ({ StyledDiv, ItemDiv, ItemImg, ItemTitle, ItemText }) => {
       <ItemDiv>
         <ItemImg src={js} alt="js" />
         <ItemTitle>JavaScript</ItemTitle>
-        <ItemText>JS is </ItemText>
+        <ItemText>
+          JavaScript is a programming language that adds interactivity to your
+          website. JavaScript itself is relatively compact, yet very flexible.
+        </ItemText>
       </ItemDiv>
-      <StyledDiv>
-        <ItemDiv>
-          <ItemImg src={nj} alt="js" />
-          <ItemTitle>Node JS</ItemTitle>
-          <ItemText>Node JS is</ItemText>
-        </ItemDiv>
-      </StyledDiv>
       <ItemDiv>
         <ItemImg src={re} alt="react" />
         <ItemTitle>REACT</ItemTitle>
-        <ItemText>React is</ItemText>
+        <ItemText>
+          React is front-end Framework for building user interfaces or UI
+          components.
+        </ItemText>
       </ItemDiv>
       <ItemDiv>
         <ItemImg src={ts} alt="typeScript" />
         <ItemTitle>TypeScript</ItemTitle>
-        <ItemText>TypeScrit is</ItemText>
+        <ItemText>
+          TypeScript is a strict syntactical superset of JavaScript and adds
+          optional static typing to the language.
+        </ItemText>
       </ItemDiv>
       <ItemDiv>
         <ItemImg src={sc} alt="StyledCompo" />
-        <ItemTitle>StyledCompsed is</ItemTitle>
-        <ItemText>Style COmpo is</ItemText>
+        <ItemTitle>Styled components is</ItemTitle>
+        <ItemText>
+          Styled components is used by teams all around the world to create
+          beautiful websites.
+        </ItemText>
       </ItemDiv>
       <ItemDiv>
         <ItemImg src={redux} alt="Redux" />
         <ItemTitle>Redux</ItemTitle>
-        <ItemText>Redux is</ItemText>
+        <ItemText>
+          Redux is a small library with a simple, limited API designed to be a
+          predictable container for application state.
+        </ItemText>
       </ItemDiv>
     </StyledDiv>
   );

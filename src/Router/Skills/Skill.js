@@ -28,7 +28,8 @@ const StyledDiv = styled.div`
 const ItemDiv = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 3em;
+  margin-top: 1em;
+  margin-bottom: 1.3em;
   align-items: center;
 `;
 
@@ -47,13 +48,34 @@ const ItemTitle = styled.h3`
 
 const ItemText = styled.p`
   margin: 0;
+  padding: 0;
+  margin-bottom: 0.8em;
+  @media only screen and (min-width: 800px) {
+    width: 65%;
+    font-size: 1.2rem;
+    line-height: calc(1.2rem + 4px);
+  }
+  @media only screen and (max-width: 799px) {
+    width: 85%;
+    font-size: 3.6vw;
+    line-height: calc(3.6vw + 4px);
+  }
+  font-weight: 400;
+  padding-top: 10px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  color: white;
 `;
 
 const Skill = ({ Container, TitleEx, SubTitle, Title }) => {
   return (
     <Container>
       <Title>Skills</Title>
-      <TitleEx>Lorem</TitleEx>
+      <TitleEx>
+        These are skills that I have to learn to shape my own thoughts. Not all
+        technologies can be used professionally, but they can be used without
+        much difficulty in proceeding with the project.
+      </TitleEx>
       <SubTitle>Web</SubTitle>
       <Web
         StyledDiv={StyledDiv}

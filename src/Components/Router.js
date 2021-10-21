@@ -39,7 +39,23 @@ const SubTitle = styled.h6`
 
 const TitleEx = styled.p`
   margin: 0;
+  padding: 0;
   margin-bottom: 0.8em;
+  @media only screen and (min-width: 800px) {
+    width: 43%;
+    font-size: 1.2rem;
+    line-height: calc(1.2rem + 6px);
+  }
+  @media only screen and (max-width: 799px) {
+    width: 85%;
+    font-size: 3.6vw;
+    line-height: calc(3.6vw + 6px);
+  }
+  font-weight: 400;
+  padding-top: 10px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  color: rgb(210, 210, 210);
 `;
 
 const AppRouter = () => {
