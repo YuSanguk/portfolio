@@ -21,6 +21,12 @@ const StyledSelect = styled.select`
   font-weight: 700;
 `;
 
+const Option = styled.option`
+  color: black;
+  font-size: 1.2rem;
+  border: none;
+`;
+
 const Portfolio = ({ Container, Title }) => {
   const [mode, setMode] = useState("Web");
   return (
@@ -28,10 +34,10 @@ const Portfolio = ({ Container, Title }) => {
       <Title>
         Portfolio About{" "}
         <StyledSelect value={mode} onChange={e => setMode(e.target.value)}>
-          <option>Web</option>
-          <option>Game</option>
-          <option>Edit</option>
-          <option>Graphic</option>
+          <Option>Web</Option>
+          <Option>Game</Option>
+          <Option>Edit</Option>
+          <Option>Graphic</Option>
         </StyledSelect>
       </Title>
       {mode === "Web" && <WebPort />}

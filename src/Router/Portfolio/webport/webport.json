@@ -1,32 +1,42 @@
 [
   {
-    "Project": "project",
-    "ImgPath": "imgPath",
-    "Key": ["one", "two"],
-    "Describe": "hello my name"
+    "Project": "Color Gradient",
+    "Link": "https://yusanguk.github.io/gradientcolor",
+    "Key": ["html", "css", "javascript"],
+    "Describe": "Color Gradient is a project that create random gradient"
   },
   {
-    "Project": "project",
-    "ImgPath": "imgPath",
-    "Key": ["one", "two"],
-    "Describe": "hello my name"
+    "Project": "Winer",
+    "ImgPath": "none",
+    "Link": "https://who-winer.netlify.app/",
+    "Key": ["html", "css", "responsive"],
+    "Describe": "Winer is website made with html and css. This web is responsive website!"
   },
   {
-    "Project": "project",
-    "ImgPath": "imgPath",
-    "Key": ["one", "two"],
-    "Describe": "hello my name"
+    "Project": "Quiz Web",
+    "ImgPath": "none",
+    "Link": "https://yusanguk.github.io/gradientcolor",
+    "Key": ["html", "css", "javascript", "J-Query", "responsive"],
+    "Describe": "Quiz web is test website for using jquery. This web is reponsive website!"
   },
   {
-    "Project": "project",
-    "ImgPath": "imgPath",
-    "Key": ["one", "two"],
-    "Describe": "hello my name"
+    "Project": "No Name...",
+    "ImgPath": "none",
+    "Link": "https://yusanguk.github.io/KBSC-REACT/#/",
+    "Key": ["html", "css", "javascript", "react"],
+    "Describe": "This website built for contest. You can observe Landing Page of it. This website is non-responsive."
   },
   {
-    "Project": "project",
-    "ImgPath": "imgPath",
-    "Key": ["one", "two"],
-    "Describe": "hello my name"
+    "Project": "portfolio",
+    "ImgPath": "none",
+    "Key": [
+      "html",
+      "css",
+      "javascript",
+      "react",
+      "responsive",
+      "Styled-Component"
+    ],
+    "Describe": "This website is made for introduce my self and skill."
   }
 ]
