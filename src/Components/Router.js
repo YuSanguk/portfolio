@@ -31,10 +31,10 @@ const Title = styled.h2`
 `;
 
 const SubTitle = styled.h6`
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0;
-  margin-top: 0.95em;
-  margin-bottom: 0.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 `;
 
 const TitleEx = styled.p`

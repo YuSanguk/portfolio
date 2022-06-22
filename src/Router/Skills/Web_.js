@@ -1,6 +1,5 @@
 import React from "react";
 import js from "./Img/web/js.png";
-import nj from "./Img/web/Node.png";
 import re from "./Img/web/react.png";
 import ts from "./Img/web/Ts.png";
 import redux from "./Img/web/redux.png";

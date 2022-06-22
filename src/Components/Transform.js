@@ -42,12 +42,13 @@ const Center = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: ${BoxDown} 5s ease-in-out;
+  animation: ${BoxDown} 4s ease-in-out;
 `;
 
 const Text = styled.p`
+  font-size: 2rem;
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 `;
 
 const Bar = styled.div`
@@ -61,13 +62,13 @@ const ColorBar = styled.div`
   height: 3px;
   width: 200px;
   background-color: #5fe386;
-  animation: ${BarCharge} 4s ease-in;
+  animation: ${BarCharge} 3.2s ease-in;
 `;
 
 const Transform = () => {
   return (
     <Center>
-      <Text>DEV-WHO</Text>
+      <Text>DEV - WHO</Text>
       <Bar>
         <ColorBar></ColorBar>
       </Bar>

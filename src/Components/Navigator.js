@@ -30,8 +30,11 @@ const Nav = styled.ul`
 const Li = styled.li`
   color: white;
   text-decoration: none;
+  font-weight: 400;
   transition: 0.2s ease-in;
   cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
   &:hover {
     color: #08fdd8;
     transition: 0.2s ease-in;
@@ -46,10 +49,10 @@ const Navigator = () => {
     setOn(true);
     setTimeout(() => {
       Scroll.animateScroll.scrollToTop();
-    }, 4000);
+    }, 3200);
     setTimeout(() => {
       setOn(false);
-    }, 5000);
+    }, 4000);
   };
 
   return (
@@ -108,7 +111,7 @@ const Navigator = () => {
           className={select === 2 ? "selected" : null}
         >
           <DelayLink
-            delay={3900}
+            delay={2000}
             to="/contacts"
             clickAction={action}
             replace={false}

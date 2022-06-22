@@ -45,9 +45,7 @@ const Graphic = ({ StyledDiv, ItemDiv, ItemImg, ItemTitle, ItemText }) => {
         <ItemTitle>Adobe InDesign</ItemTitle>
         <ItemText>
           InDesign is a desktop publishing and page layout designing software
-          application. InDesign can be used to create works such as posters,
-          flyers, brochures, magazines, newspapers, presentations, books and
-          ebooks.
+          application.
         </ItemText>
       </ItemDiv>
     </StyledDiv>

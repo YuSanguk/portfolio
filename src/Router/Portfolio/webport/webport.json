@@ -15,7 +15,7 @@
   {
     "Project": "Quiz Web",
     "ImgPath": "none",
-    "Link": "https://yusanguk.github.io/gradientcolor",
+    "Link": "https://quiz-who.netlify.app/",
     "Key": ["html", "css", "javascript", "J-Query", "responsive"],
     "Describe": "Quiz web is test website for using jquery. This web is reponsive website!"
   },

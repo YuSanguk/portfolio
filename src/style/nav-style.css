@@ -1,4 +1,6 @@
 .selected {
-  border-bottom: oldlace 1px solid;
+  border-bottom: #08fdd8 1px solid;
+  font-weight: 500 !important;
   transition: 0.2s;
+  color: #08fdd8 !important;
 }
